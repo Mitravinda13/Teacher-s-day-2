@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Pravita Ma'am — Happy Teachers' Day 🌷</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  color:#493b4d;
+  background:linear-gradient(135deg,#fff5f8 0%,#f4efff 50%,#eefaff 100%);
+  line-height:1.7;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(12px);
+  padding:12px;text-align:center;
+  box-shadow:0 2px 15px rgba(80,50,90,.1)
+}
+nav a{color:#8f496f;text-decoration:none;margin:0 10px;font-size:14px}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:80px 20px 40px;
+}
+.hero-box,.panel{
+  width:min(920px,92%);
+  margin:auto;
+  background:rgba(255,255,255,.84);
+  backdrop-filter:blur(12px);
+  border-radius:32px;
+  padding:45px 28px;
+  box-shadow:0 18px 60px rgba(100,70,110,.13);
+}
+.hero-box{animation:appear 1.2s ease}
+.flower{font-size:72px;animation:float 3s infinite ease-in-out}
+h1{font-size:clamp(42px,9vw,78px);line-height:1.05;color:#984d76;margin:12px 0}
+h2{font-size:clamp(28px,5vw,42px);color:#984d76;margin:0 0 25px}
+h3{color:#984d76}
+.subtitle{font-size:21px;max-width:700px;margin:15px auto}
+.small{font-size:15px;opacity:.75}
+.btn{
+  display:inline-block;border:0;border-radius:30px;padding:14px 28px;
+  margin:12px 6px;background:#984d76;color:#fff;font-size:16px;
+  cursor:pointer;text-decoration:none;transition:.3s
+}
+.btn:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(100,50,100,.2)}
+section{padding:85px 15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{
+  background:rgba(255,255,255,.88);padding:25px 20px;border-radius:24px;
+  box-shadow:0 8px 25px rgba(100,70,100,.09);
+  transition:.3s;cursor:pointer
+}
+.card:hover{transform:translateY(-6px)}
+.hidden{display:none}
+.reveal{
+  margin-top:15px;padding:15px;border-radius:16px;
+  background:#fff3f8
+}
+.quote{
+  font-size:25px;font-style:italic;color:#80506c;
+  padding:25px;margin:20px 0;border-left:4px solid #c887aa;
+  background:rgba(255,255,255,.6);border-radius:12px
+}
+.timeline{text-align:left;max-width:720px;margin:auto}
+.step{display:flex;gap:18px;margin:20px 0;align-items:flex-start}
+.number{
+  min-width:45px;height:45px;border-radius:50%;
+  background:#984d76;color:#fff;display:flex;align-items:center;
+  justify-content:center;font-weight:bold
+}
+.quiz,.letter,.final{
+  max-width:760px;margin:auto;background:rgba(255,255,255,.88);
+  padding:32px 25px;border-radius:28px;
+  box-shadow:0 10px 35px rgba(100,70,100,.1)
+}
+.option{
+  display:block;width:100%;border:0;border-radius:18px;
+  padding:14px;margin:10px 0;background:#f7dfea;color:#4f3949;
+  font-size:16px;cursor:pointer;text-align:left
+}
+.option:hover{background:#efd0e0}
+#quizResult{margin-top:20px;font-size:18px}
+.letter p{font-size:18px}
+.big-heart{font-size:75px;animation:pulse 1.6s infinite}
+footer{text-align:center;padding:45px 15px}
+.confetti{position:fixed;top:-30px;z-index:100;pointer-events:none;animation:fall linear forwards}
+#musicNote{font-size:13px;opacity:.7;margin-top:8px}
+@keyframes appear{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:600px){nav a{margin:0 4px;font-size:11px}.hero-box,.panel{padding:32px 19px}.step{gap:12px}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#welcome">Home</a>
+<a href="#qualities">Why You’re Special</a>
+<a href="#journey">Journey</a>
+<a href="#quiz">Quiz</a>
+<a href="#letter">Letter</a>
+</nav>
+
+<section class="hero" id="welcome">
+<div class="hero-box">
+<div class="flower">🌷</div>
+<p class="small">A little surprise created especially for</p>
+<h1>Pravita Ma'am</h1>
+<p class="subtitle">
+Not just a teacher, but someone who guides, encourages, inspires
+and makes a difference in the lives of her students.
+</p>
+<p style="font-size:22px;color:#984d76"><strong>Happy Teachers' Day! ❤️</strong></p>
+<a class="btn" href="#qualities" onclick="celebrate()">Begin the Surprise ✨</a>
+<a class="btn" href="#letter">Skip to My Letter 💌</a>
+</div>
+</section>
+
+<section id="qualities">
+<div class="panel">
+<h2>What Makes a Teacher Truly Special? 🌸</h2>
+<p>Tap each card. There is a little message hidden inside.</p>
+<div class="cards">
+
+<div class="card" onclick="toggle('r1')">
+<h3>🌷 Patience</h3>
+<p>For explaining one more time...</p>
+<div id="r1" class="reveal hidden">Because sometimes students need a second explanation, a third one, or simply someone who says, “Try again.” Thank you for being that person.</div>
+</div>
+
+<div class="card" onclick="toggle('r2')">
+<h3>✨ Encouragement</h3>
+<p>For making us believe...</p>
+<div id="r2" class="reveal hidden">A few encouraging words from a teacher can turn “I can't” into “I'll try.” Your encouragement matters more than you may realise.</div>
+</div>
+
+<div class="card" onclick="toggle('r3')">
+<h3>💗 Kindness</h3>
+<p>For caring beyond books...</p>
+<div id="r3" class="reveal hidden">A great teacher notices when a student needs help, confidence or simply a little kindness. That is something students remember.</div>
+</div>
+
+<div class="card" onclick="toggle('r4')">
+<h3>🌟 Inspiration</h3>
+<p>For showing us possibilities...</p>
+<div id="r4" class="reveal hidden">Teachers open doors we did not know existed. Thank you for inspiring students to dream, learn and keep moving forward.</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="panel">
+<h2>A Little Thought 💫</h2>
+<div class="quote">
+“Some teachers teach from a textbook.<br>
+The best teachers teach from the heart.”
+</div>
+<p>
+Years from now, students may not remember every chapter,
+every worksheet or every test. But they remember how a teacher
+made them feel — supported, understood, encouraged and capable.
+</p>
+</div>
+</section>
+
+<section id="journey">
+<div class="panel">
+<h2>A Teacher's Beautiful Journey 🌱</h2>
+<div class="timeline">
+<div class="step"><div class="number">1</div><div><h3>Teach</h3><p>You share knowledge and help students understand the world around them.</p></div></div>
+<div class="step"><div class="number">2</div><div><h3>Guide</h3><p>You help students when they are confused and show them a way forward.</p></div></div>
+<div class="step"><div class="number">3</div><div><h3>Encourage</h3><p>You remind students that mistakes are not failures — they are part of learning.</p></div></div>
+<div class="step"><div class="number">4</div><div><h3>Inspire</h3><p>You make students believe that they can become more than they thought possible.</p></div></div>
+<div class="step"><div class="number">5</div><div><h3>Leave a Mark</h3><p>Long after the school year ends, your lessons and words continue to stay with your students.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="quiz">
+<div class="quiz">
+<h2>A Tiny Teachers' Day Quiz 😄</h2>
+<p><strong>What is the most valuable thing a great teacher can give a student?</strong></p>
+<button class="option" onclick="answer(1)">A. More homework 📚</button>
+<button class="option" onclick="answer(2)">B. Perfect marks 📝</button>
+<button class="option" onclick="answer(3)">C. Confidence to believe in themselves ❤️</button>
+<button class="option" onclick="answer(4)">D. A reason to smile 😊</button>
+<div id="quizResult"></div>
+</div>
+</section>
+
+<section>
+<div class="panel">
+<h2>Four Little Thank-Yous 💌</h2>
+<div class="cards">
+<div class="card"><h3>Thank you</h3><p>for every explanation.</p></div>
+<div class="card"><h3>Thank you</h3><p>for every word of encouragement.</p></div>
+<div class="card"><h3>Thank you</h3><p>for every lesson inside and outside the classroom.</p></div>
+<div class="card"><h3>Thank you</h3><p>for being a teacher we can remember with a smile.</p></div>
+</div>
+</div>
+</section>
+
+<section id="letter">
+<div class="letter">
+<h2>A Letter for You 💗</h2>
+<p>Dear Pravita Ma'am,</p>
+<p>
+Teachers have a special place in our lives because they do much more
+than complete a syllabus. They help shape the people we are becoming.
+</p>
+<p>
+Thank you for your patience when we struggle, your guidance when we
+are confused, and your encouragement when we doubt ourselves.
+</p>
+<p>
+Thank you for celebrating our little successes and for reminding us
+that every mistake can become a lesson.
+</p>
+<p>
+There may be countless lessons written in our notebooks, but the
+lessons that stay in our hearts are often the ones taught by people
+who genuinely care.
+</p>
+<p>
+So today, I just wanted to pause and say something simple but sincere:
+</p>
+<div class="quote">
+<strong>Thank you for being our teacher. 🌷</strong>
+</div>
+<p>
+May you always know that the work you do matters. Every student you
+teach carries a little piece of your guidance forward.
+</p>
+<p><strong>Happy Teachers' Day, Pravita Ma'am! ❤️</strong></p>
+<p style="margin-top:28px;color:#984d76"><strong>With heartfelt gratitude,<br>Team Hybrid</strong></p>
+</div>
+</section>
+
+<section>
+<div class="final">
+<div class="big-heart">❤️</div>
+<h2>One Last Surprise...</h2>
+<p style="font-size:20px">
+A teacher may enter a classroom for one lesson,
+but the right teacher can remain in a student's memories for years.
+</p>
+<button class="btn" onclick="finale()">Click for a Final Surprise 🌷</button>
+<div id="finalMessage" class="hidden" style="margin-top:25px">
+<h2>Pravita Ma'am,</h2>
+<p style="font-size:21px">
+<strong>You are appreciated. You are respected. You are remembered.</strong>
+</p>
+<p>Happy Teachers' Day! 🌷✨</p>
+<p><strong>— Made with ❤️ by Team Hybrid</strong></p>
+</div>
+</div>
+</section>
+
+<footer>
+🌷 Happy Teachers' Day, Pravita Ma'am 🌷<br>
+<span class="small">A little digital gift • Made by Team Hybrid</span>
+</footer>
+
+<script>
+function toggle(id){
+  const el=document.getElementById(id);
+  el.classList.toggle('hidden');
+}
+function answer(n){
+  const r=document.getElementById('quizResult');
+  if(n===3){
+    r.innerHTML="🎉 Correct! ❤️ A teacher's greatest gift can be the confidence to believe, “I can do this.”";
+  }else{
+    r.innerHTML="😊 Beautiful choice! But the answer we were looking for is <strong>C</strong> — confidence and belief in oneself. ❤️";
+  }
+}
+function celebrate(){
+  for(let i=0;i<24;i++){
+    const c=document.createElement('div');
+    c.className='confetti';
+    c.textContent=['🌸','❤️','✨','🌷'][Math.floor(Math.random()*4)];
+    c.style.left=Math.random()*100+'vw';
+    c.style.fontSize=(16+Math.random()*18)+'px';
+    c.style.animationDuration=(3+Math.random()*3)+'s';
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),6500);
+  }
+}
+function finale(){
+  document.getElementById('finalMessage').classList.remove('hidden');
+  celebrate();
+}
+</script>
+
+</body>
+</html>
